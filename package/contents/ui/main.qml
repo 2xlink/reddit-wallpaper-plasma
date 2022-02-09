@@ -44,7 +44,7 @@ QQC2.StackView {
         repeat: true
         triggeredOnStart: true
         onTriggered: {
-            getReddit("http://www.reddit.com/r/"+subreddit+"/new.json?limit=100",callback)
+            getReddit("https://www.reddit.com/r/"+subreddit+"/new.json?limit=100",callback)
         }
     }
 
@@ -54,7 +54,7 @@ QQC2.StackView {
         repeat: false
         triggeredOnStart: false
         onTriggered: {
-            getReddit("http://www.reddit.com/r/"+subreddit+"/new.json?limit=100",callback)
+            getReddit("https://www.reddit.com/r/"+subreddit+"/new.json?limit=100",callback)
         }
     }
 
@@ -202,17 +202,18 @@ QQC2.StackView {
                     }
                 }
             }
-    QQC2.Label {
-        id: imageTitle
-        color: "white"
-        font.pixelSize: 12
-        text : imgTitle
-        // hardcoded positioning sucks
-        // we need a way to know how much space user toolbars take
-        // to avoid positioning the label behind
-        y : (root.height * Screen.devicePixelRatio) - 50
-        x: 30
-    }
+
+            QQC2.Label {
+                id: imageTitle
+                color: "lightgrey"
+                font.pixelSize: 12
+                text : imgTitle
+                // hardcoded positioning sucks
+                // we need a way to know how much space user toolbars take
+                // to avoid positioning the label behind
+                y : (root.height * Screen.devicePixelRatio) - 50
+                x: 30
+            }
         }
     }
 
