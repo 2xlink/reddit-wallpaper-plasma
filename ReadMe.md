@@ -1,3 +1,5 @@
+**This repo contains some fixes to get the addon working again, as the original one was broken for me.**
+
 Plasma Reddit Wallpaper plugin 
 
 In config : 
