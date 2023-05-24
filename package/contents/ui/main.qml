@@ -102,7 +102,6 @@ QQC2.StackView {
             if (xhr.readyState == 4) { callback(xhr);}
        });
        xhr.open('GET', url, true);
-       xhr.setRequestHeader('User-Agent','reddit-wallpaper-kde-plugin');
        XMLHttpRequest.timeout = 15000
        xhr.send();
    }
